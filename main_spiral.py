@@ -9,6 +9,9 @@ import numpy as np
 
 
 def spiral_matrix(n):
+    """ 
+    program that generates a spiral matrix 
+    """
     output_matrix = np.zeros((n,n))
     output_matrix[-1][-1]=1
     current_line = n-1
@@ -35,27 +38,3 @@ def spiral_matrix(n):
             current_value +=1
             output_matrix[current_line][current_col] = current_value
     return output_matrix
-        
-print(spiral_matrix(10)) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    
-
-    
-
-
-
-    
-    
